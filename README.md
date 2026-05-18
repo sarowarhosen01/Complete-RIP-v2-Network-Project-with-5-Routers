@@ -1,5 +1,3 @@
-# Complete-RIP-v2-Network-Project-with-5-Routers
-
 # Dynamic Routing Network with RIP v2
 
 ## Project Overview
