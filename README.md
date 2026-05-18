@@ -8,6 +8,10 @@ The topology consists of five Cisco routers (R1 to R5) connected in a closed loo
 
 ---
 
+## 📸 Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/sarowarhosen01/Design-and-Implementation-of-a-Multi-Building-Campus-Network-/refs/heads/main/Screenshots/topology-overview.jpg)
+
 ## Key Features
 
 - **Dynamic Routing**: Full implementation of RIP v2 for automatic route discovery and convergence.
