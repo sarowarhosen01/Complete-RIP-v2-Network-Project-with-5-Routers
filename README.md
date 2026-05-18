@@ -10,7 +10,7 @@ The topology consists of five Cisco routers (R1 to R5) connected in a closed loo
 
 ## 📸 Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/sarowarhosen01/Design-and-Implementation-of-a-Multi-Building-Campus-Network-/refs/heads/main/Screenshots/topology-overview.jpg)
+![App Screenshot](https://raw.githubusercontent.com/sarowarhosen01/Complete-RIP-v2-Network-Project-with-5-Routers/refs/heads/main/Screenshots/Screenshot-rip-routing%20topology.jpg)
 
 ## Key Features
 
