@@ -1,0 +1,33 @@
+
+enable
+configure terminal
+hostname R4
+no ip domain-lookup
+
+interface se0/0/1
+ ip address 10.1.34.1 255.255.255.252
+ no shutdown
+ description Link_to_R3
+
+interface se0/0/0
+ ip address 10.1.45.1 255.255.255.252
+ no shutdown
+ description Link_to_R5
+
+
+
+
+interface fa0/0
+ ip address 192.168.13.1 255.255.255.0
+ no shutdown
+
+router rip
+ version 2
+ no auto-summary
+ network 10.1.34.0
+ network 10.1.45.0
+ network 192.168.13.0
+ network 192.168.4.0
+
+end
+write memory
