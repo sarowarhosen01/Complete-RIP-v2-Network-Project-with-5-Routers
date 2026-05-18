@@ -1,1 +1,39 @@
+! Enter global configuration mode
+enable
 
+configure terminal
+
+! Set hostname
+hostname R1
+
+! Disable DNS lookup to avoid delays
+no ip domain-lookup
+
+! Configure interfaces
+interface se0/0/0
+ ip address 10.1.12.1 255.255.255.252
+ no shutdown
+ description Link_R1_to_R2
+
+interface se0/0/1
+ ip address 10.1.15.1 255.255.255.252
+ no shutdown
+ description Link_R2_to_R5
+
+interface fa0/0
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
+
+
+! Configure RIP v2
+router rip
+ version 2
+ no auto-summary
+ network 10.1.12.0
+ network 10.1.15.0
+ network 192.168.10.0
+ network 192.168.1.0
+
+! Save configuration
+end
+write memory
